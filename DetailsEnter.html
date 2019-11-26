@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+ User Details
+</head>
+
+
+<body>
+
+<!--Form starting -->
+<form onsubmit="return false">
+ 
+<table border=1>
+<thead>
+<tr>
+<td>S.NO</td>
+<td>First Name</td>
+<td>Last Name</td>
+<td>Email Address</td>
+<td>Phone Number</td>
+</tr>
+</thead>
+
+<tr border=1>
+<td> <input type="text" id ="sno1"> </td>
+<td> <input type="text" id ="fname1"> </td>
+<td> <input type="text" id ="lname1"> </td>
+<td> <input type="text" id ="email1"> </td>
+<td> <input type="text" id ="phone1"> </td>
+
+</tr>
+
+<tr border=1>
+<td> <input type="text" id ="sno2"> </td>
+<td> <input type="text" id ="fname2"> </td>
+<td> <input type="text" id ="lname2"> </td>
+<td> <input type="text" id ="email2"> </td>
+<td> <input type="text" id ="phone2"> </td>
+</tr>
+
+<tr border=1>
+<td> <input type="text" id ="sno3"> </td>
+<td> <input type="text" id ="fname3"> </td>
+<td> <input type="text" id ="lname3"> </td>
+<td> <input type="text" id ="email3"> </td>
+<td> <input type="text" id ="phone3"> </td>
+</tr>
+
+<tr border=1>
+<td> <input type="text" id ="sno4"> </td>
+<td> <input type="text" id ="fname4"> </td>
+<td> <input type="text" id ="lname4"> </td>
+<td> <input type="text" id ="email4"> </td>
+<td> <input type="text" id ="phone4"> </td>
+</tr>
+
+<tr border=1>
+<td> <input type="text" id ="sno5"> </td>
+<td> <input type="text" id ="fname5"> </td>
+<td> <input type="text" id ="lname5"> </td>
+<td> <input type="text" id ="email5"> </td>
+<td> <input type="text" id ="phone5"> </td>
+</tr>
+
+
+<tr border=1>
+<td> <input type="text" id ="sno6"> </td>
+<td> <input type="text" id ="fname6"> </td>
+<td> <input type="text" id ="lname6"> </td>
+<td> <input type="text" id ="email6"> </td>
+<td> <input type="text" id ="phone6"> </td>
+</tr>
+
+<tr border=1>
+<td> <input type="text" id ="sno7"> </td>
+<td> <input type="text" id ="fname7"> </td>
+<td> <input type="text" id ="lname7"> </td>
+<td> <input type="text" id ="email7"> </td>
+<td> <input type="text" id ="phone7"> </td>
+</tr>
+
+<tr border=1>
+<td> <input type="text" id ="sno8"> </td>
+<td> <input type="text" id ="fname8"> </td>
+<td> <input type="text" id ="lname8"> </td>
+<td> <input type="text" id ="email8"> </td>
+<td> <input type="text" id ="phone8"> </td>
+</tr>
+
+<tr border=1>
+<td> <input type="text" id ="sno9"> </td>
+<td> <input type="text" id ="fname9"> </td>
+<td> <input type="text" id ="lname9"> </td>
+<td> <input type="text" id ="email9"> </td>
+<td> <input type="text" id ="phone9"> </td>
+</tr>
+
+<tr border=1>
+<<td> <input type="text" id ="sno10"> </td>
+<td> <input type="text" id ="fname10"> </td>
+<td> <input type="text" id ="lname10"> </td>
+<td> <input type="text" id ="email10"> </td>
+<td> <input type="text" id ="phone10"> </td>
+</tr>
+
+<tr border=1>
+<td> <input type="text" id ="sno11"> </td>
+<td> <input type="text" id ="fname11"> </td>
+<td> <input type="text" id ="lname11"> </td>
+<td> <input type="text" id ="email11"> </td>
+<td> <input type="text" id ="phone11"> </td>
+</tr>
+
+<tr border=1>
+<td> <input type="text" id ="sno12"> </td>
+<td> <input type="text" id ="fname12"> </td>
+<td> <input type="text" id ="lname12"> </td>
+<td> <input type="text" id ="email12"> </td>
+<td> <input type="text" id ="phone12"> </td>
+</tr>
+
+<tr border=1>
+<td> <input type="text" id ="sno13"> </td>
+<td> <input type="text" id ="fname13"> </td>
+<td> <input type="text" id ="lname13"> </td>
+<td> <input type="text" id ="email13"> </td>
+<td> <input type="text" id ="phone13"> </td>
+</tr>
+
+<tr border=1>
+<td> <input type="text" id ="sno14"> </td>
+<td> <input type="text" id ="fname14"> </td>
+<td> <input type="text" id ="lname14"> </td>
+<td> <input type="text" id ="email14"> </td>
+<td> <input type="text" id ="phone14"> </td>
+</tr>
+
+<tr border=1>
+<td> <input type="text" id ="sno15"> </td>
+<td> <input type="text" id ="fname15"> </td>
+<td> <input type="text" id ="lname15"> </td>
+<td> <input type="text" id ="email15"> </td>
+<td> <input type="text" id ="phone15"> </td>
+</tr>
+
+</table>
+
+<input type = "submit" value="submit" onclick="showInput()">
+
+
+</form>
+<!--Form Ending -->
+
+<script language="JavaScript">
+    function showInput() {
+       let x = document.getElementById("sno1").value;
+	   x += document.getElementById("fname1").value;
+	   x += document.getElementById("lname1").value;
+	   x += document.getElementById("email1").value;
+	   x += document.getElementById("phone1").value;
+	   
+	   x += document.getElementById("sno2").value;
+	   x += document.getElementById("fname2").value;
+	   x += document.getElementById("lname2").value;
+	   x += document.getElementById("email2").value;
+	   x += document.getElementById("phone2").value;
+
+	   x += document.getElementById("sno3").value;
+	   x += document.getElementById("fname3").value;
+	   x += document.getElementById("lname3").value;
+	   x += document.getElementById("email3").value;
+	   x += document.getElementById("phone3").value;
+	   
+	   x += document.getElementById("sno4").value;
+	   x += document.getElementById("fname4").value;
+	   x += document.getElementById("lname4").value;
+	   x += document.getElementById("email4").value;
+	   x += document.getElementById("phone4").value;
+
+	   x += document.getElementById("sno5").value;
+	   x += document.getElementById("fname5").value;
+	   x += document.getElementById("lname5").value;
+	   x += document.getElementById("email5").value;
+	   x += document.getElementById("phone5").value;
+	   
+	   x += document.getElementById("sno6").value;
+	   x += document.getElementById("fname6").value;
+	   x += document.getElementById("lname6").value;
+	   x += document.getElementById("email6").value;
+	   x += document.getElementById("phone6").value;
+
+	   x += document.getElementById("sno7").value;
+	   x += document.getElementById("fname7").value;
+	   x += document.getElementById("lname7").value;
+	   x += document.getElementById("email7").value;
+	   x += document.getElementById("phone7").value;
+	   
+	   x += document.getElementById("sno8").value;
+	   x += document.getElementById("fname8").value;
+	   x += document.getElementById("lname8").value;
+	   x += document.getElementById("email8").value;
+	   x += document.getElementById("phone8").value;
+
+	   x += document.getElementById("sno9").value;
+	   x += document.getElementById("fname9").value;
+	   x += document.getElementById("lname9").value;
+	   x += document.getElementById("email9").value;
+	   x += document.getElementById("phone9").value;
+	   
+	   x += document.getElementById("sno10").value;
+	   x += document.getElementById("fname10").value;
+	   x += document.getElementById("lname10").value;
+	   x += document.getElementById("email10").value;
+	   x += document.getElementById("phone10").value;
+
+	   x += document.getElementById("sno11").value;
+	   x += document.getElementById("fname11").value;
+	   x += document.getElementById("lname11").value;
+	   x += document.getElementById("email11").value;
+	   x += document.getElementById("phone11").value;
+	   
+	   x += document.getElementById("sno12").value;
+	   x += document.getElementById("fname12").value;
+	   x += document.getElementById("lname12").value;
+	   x += document.getElementById("email12").value;
+	   x += document.getElementById("phone12").value;
+
+	   x += document.getElementById("sno13").value;
+	   x += document.getElementById("fname13").value;
+	   x += document.getElementById("lname13").value;
+	   x += document.getElementById("email13").value;
+	   x += document.getElementById("phone13").value;
+	   
+	   x += document.getElementById("sno14").value;
+	   x += document.getElementById("fname14").value;
+	   x += document.getElementById("lname14").value;
+	   x += document.getElementById("email14").value;
+	   x += document.getElementById("phone14").value;
+
+	   x += document.getElementById("sno15").value;
+	   x += document.getElementById("fname15").value;
+	   x += document.getElementById("lname15").value;
+	   x += document.getElementById("email15").value;
+	   x += document.getElementById("phone15").value;
+	   
+	   x += document.getElementById("sno1").value;
+	   x += document.getElementById("fname1").value;
+	   x += document.getElementById("lname1").value;
+	   x += document.getElementById("email1").value;
+	   x += document.getElementById("phone1").value;
+
+	   x += document.getElementById("sno1").value;
+	   x += document.getElementById("fname1").value;
+	   x += document.getElementById("lname1").value;
+	   x += document.getElementById("email1").value;
+	   x += document.getElementById("phone1").value;
+	   
+	   
+    }
+  </script>
+
+
+</body>
+</html>

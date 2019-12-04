@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<body id="bodyid" onload = "homePageLoad()">
+ 
+<table border="1" id="table1" >
+<tr>
+<th>S.NO</th>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email Address</th>
+<th>Phone Number</th>
+</tr>
+
+<tr border=1 id="tr1">
+<td> 1</td>
+<td> Dev </td>
+<td> Kanikaram </td>
+<td> Dev@gmail.com</td>
+<td> 1234567890</td>
+</tr>
+
+<tr border=1 id="tr2">
+<td> 2</td>
+<td> Dev </td>
+<td> Kanikaram </td>
+<td> Dev@gmail.com</td>
+<td> 1234567890</td>
+</tr>
+
+<tr border=1 id="tr3">
+<td> 3</td>
+<td> Dev </td>
+<td> Kanikaram </td>
+<td> Dev@gmail.com</td>
+<td> 1234567890</td>
+</tr>
+
+<tr border=1 id="tr4">
+<td> 4</td>
+<td> Dev </td>
+<td> Kanikaram </td>
+<td> Dev@gmail.com</td>
+<td> 1234567890</td>
+</tr>
+
+<tr border=1 id="tr5">
+<td> 5</td>
+<td> Dev </td>
+<td> Kanikaram </td>
+<td> Dev@gmail.com</td>
+<td> 1234567890</td>
+</tr>
+
+
+<tr border=1 id="tr6">
+<td> 6</td>
+<td> Dev </td>
+<td> Kanikaram </td>
+<td> Dev@gmail.com</td>
+<td> 1234567890</td>
+</tr>
+
+<tr border=1 id="tr7">
+<td> 7</td>
+<td> Dev </td>
+<td> Kanikaram </td>
+<td> Dev@gmail.com</td>
+<td> 1234567890</td>
+</tr>
+
+<tr border=1 id="tr8">
+<td> 8</td>
+<td> Dev </td>
+<td> Kanikaram </td>
+<td> Dev@gmail.com</td>
+<td> 1234567890</td>
+</tr>
+
+<tr border=1 id="tr9">
+<td> 9</td>
+<td> Dev </td>
+<td> Kanikaram </td>
+<td> Dev@gmail.com</td>
+<td> 1234567890</td>
+</tr>
+
+<tr border=1 id="tr10">
+<td> 10</td>
+<td> Dev </td>
+<td> Kanikaram </td>
+<td> Dev@gmail.com</td>
+<td> 1234567890</td>
+</tr>
+
+<tr border=1 id="tr11">
+<td> 11</td>
+<td> Dev </td>
+<td> Kanikaram </td>
+<td> Dev@gmail.com</td>
+<td> 1234567890</td>
+</tr>
+
+<tr border=1 id="tr12">
+<td> 12</td>
+<td> Dev </td>
+<td> Kanikaram </td>
+<td> Dev@gmail.com</td>
+<td> 1234567890</td>
+</tr>
+
+<tr border=1 id="tr13">
+<td> 13</td>
+<td> Dev </td>
+<td> Kanikaram </td>
+<td> Dev@gmail.com</td>
+<td> 1234567890</td>
+</tr>
+
+<tr border=1 id="tr14">
+<td> 14</td>
+<td> Dev </td>
+<td> Kanikaram </td>
+<td> Dev@gmail.com</td>
+<td> 1234567890</td>
+</tr>
+
+<tr border=1 id="tr15">
+<td> 15</td>
+<td> Dev </td>
+<td> Kanikaram </td>
+<td> Dev@gmail.com</td>
+<td> 1234567890</td>
+</tr>
+</table>
+
+<input type = "button" name="previous" value="Previous" id="btnprevious" onClick="previousbtnclick()">
+<input type = "button" name="next" value="Next" id="btnnext" onClick="nextbtnclick()">
+
+<select id="dropdownid" onchange="dropDownclick()">
+ <option value="5">5 </option>
+ <option value="10">10</option>
+ <option value="15">15</option>
+</select>
+
+<script language="JavaScript">
+//To Load the Home page with Previous button disabled..
+function homePageLoad(){
+	var x = document.getElementById("table1").rows.length;
+		for(var i=1; i<x;i++){
+		if(i<6){
+		document.getElementById("tr"+i).style.display = ''; 
+		}
+		if(i>5){
+		document.getElementById("tr"+i).style.display='none'; 
+		}
+	}
+		document.getElementById("btnprevious").disabled = true;
+		document.getElementById("btnnext").disabled = false;
+}
+	// To load the records from 6 to 10 with both buttons enabled
+	
+	function getSecondFiveRows(){
+	var x = document.getElementById("table1").rows.length;
+		for(var i=1; i<x;i++){
+		if(i<6 || i>10){
+		document.getElementById("tr"+i).style.display='none'; 
+		}
+		else{
+		document.getElementById("tr"+i).style.display = ''; 
+		}
+	}
+		document.getElementById("btnprevious").disabled = false;
+		document.getElementById("btnnext").disabled = false;
+}
+			// To load 11 to 15 with next button disabled
+		
+	function getThirdFiveRows(){
+		var x = document.getElementById("table1").rows.length;
+		for(var i=1; i<x;i++){
+		if(i<11){
+		document.getElementById("tr"+i).style.display='none'; 
+		}
+		else{
+		document.getElementById("tr"+i).style.display = ''; 
+		}
+	}
+		document.getElementById("btnprevious").disabled = false;
+		document.getElementById("btnnext").disabled = true;
+}
+		
+	function loadTenRecords(){
+		var x = document.getElementById("table1").rows.length;
+		for(var i=1; i<x;i++){
+		if(i<11){
+		document.getElementById("tr"+i).style.display = ''; 
+		}
+		else{
+		document.getElementById("tr"+i).style.display='none'; 
+		}
+	    }
+		document.getElementById("btnprevious").disabled = false;
+		document.getElementById("btnnext").disabled = true;
+}
+
+	function loadAllRecords1(){
+		var x = document.getElementById("table1").rows.length;
+			for(var i=1; i<=x;i++){
+				document.getElementById("tr"+i).style.display = ""; 
+			}
+				document.getElementById("btnprevious").disabled = true;
+				document.getElementById("btnnext").disabled = true;
+	}
+	
+	function dropDownclick(){
+	let x = document.getElementById("dropdownid").value;
+	if(x==="5")
+	{
+		 homePageLoad();
+	}
+	if(x==="10"){
+	loadTenRecords();
+	}
+	if(x==="15")
+	{
+	loadAllRecords1();
+	}
+	}
+	
+	function previousbtnclick(){
+	let x = document.getElementById("dropdownid").value;
+	if(x==="10")
+	{
+		 homePageLoad();
+		 document.getElementById("dropdownid").value=5;
+	}
+	if(x==="15")
+	{
+		 getSecondFiveRows();
+		 document.getElementById("dropdownid").value=10;
+	}
+	}
+	
+	function nextbtnclick(){
+	let x = document.getElementById("dropdownid").value;
+	if(x==="5")
+	{
+		 getSecondFiveRows();
+		 document.getElementById("dropdownid").value =10;
+	}
+	if(x==="10")
+	{
+		 getThirdFiveRows();
+		 document.getElementById("dropdownid").value =15;
+	}
+	}
+	
+</script>
+</body>
+</html>
